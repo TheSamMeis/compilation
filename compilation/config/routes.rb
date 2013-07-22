@@ -1,4 +1,8 @@
 Compilation::Application.routes.draw do
+  get "accounts/edit"
+  get "accounts/update"
+  get "users/new"
+  get "users/create"
   get "site/index"
   get "site/privacy"
   get "site/terms"
