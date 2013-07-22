@@ -27,9 +27,8 @@ ActiveRecord::Schema.define(version: 20130722175934) do
     t.string   "lastfm_key"
     t.string   "pandora_key"
     t.string   "spotify_key"
-    t.datetime "create_at"
-    t.datetime "updated_at"
     t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

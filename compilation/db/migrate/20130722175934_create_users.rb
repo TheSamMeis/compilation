@@ -11,8 +11,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :lastfm_key
       t.string :pandora_key
       t.string :spotify_key
-      t.datetime :create_at
-      t.datetime :updated_at
+     
 
       t.timestamps
     end
