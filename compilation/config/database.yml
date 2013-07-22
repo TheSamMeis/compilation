@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: textapp_development
+  database: compilation_development
   pool: 5
   host: localhost
   username: skmeis
@@ -47,7 +47,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: textapp_test
+  database: compilation_test
   pool: 5
   host: localhost
   username: skmeis  
@@ -56,7 +56,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: textapp_production
+  database: compilation_production
   pool: 5
   host: localhost     
   username: skmeis
