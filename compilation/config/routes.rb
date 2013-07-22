@@ -4,6 +4,8 @@ Compilation::Application.routes.draw do
   get "site/terms"
   get "site/landing"
 
+  get "/userdetails" => "site#userdetails"
+
   root 'site#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

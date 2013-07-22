@@ -60,4 +60,4 @@ production:
   pool: 5
   host: localhost     
   username: skmeis
-  password: SAM892306
+  password: SAM892306g
