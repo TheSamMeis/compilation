@@ -1,10 +1,14 @@
 Compilation::Application.routes.draw do
+  get "accounts/edit"
+  get "accounts/update"
+  get "users/new"
+  get "users/create"
   get "site/index"
   get "site/privacy"
   get "site/terms"
   get "site/landing"
 
-  get "/userdetails" => "site#userdetails"
+  get "/userdetails" => "accounts#edit"
 
   root 'site#index'
   # The priority is based upon order of creation: first created -> highest priority.

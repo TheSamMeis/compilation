@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  birthday: 2013-07-22
+  salt: MyString
+  fish: MyString
+  code: MyString
+  lastfm_key: MyString
+  pandora_key: MyString
+  spotify_key: MyString
+  create_at: 2013-07-22 10:59:34
+  updated_at: 2013-07-22 10:59:34
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  birthday: 2013-07-22
+  salt: MyString
+  fish: MyString
+  code: MyString
+  lastfm_key: MyString
+  pandora_key: MyString
+  spotify_key: MyString
+  create_at: 2013-07-22 10:59:34
+  updated_at: 2013-07-22 10:59:34
