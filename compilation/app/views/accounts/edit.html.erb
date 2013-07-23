@@ -8,17 +8,17 @@
 	<div class="large-6 columns">
 
 <h2>Link your music accounts</h2>
-	<p><a href="http://www.last.fm/api/auth/?api_key=17b2bea8210223f82d71550ba21fba65&cb=http://localhost:3000/userdetails"  class="small button"> Link your Last.FM</a></p>
+	<p><a href="http://www.last.fm/api/auth/?api_key=17b2bea8210223f82d71550ba21fba65&cb=http://localhost:3000/userdetails/1"  class="small button"> Link your Last.FM</a></p>
 	<p><a href=# class="small button"> Link your Spotify</a></p>
 	
 	
 </div>
 
-<div class="large-6 columns "> 
+<!-- <div class="large-6 columns "> 
 
 	<h2> Give us some other info </h2>
 
-	<form action="/update" method="post">
+	<form action="accounts/1" method="put">
       
       <input type="text" id="first_name" name="first_name" placeholder="First Name">
 
@@ -29,6 +29,8 @@
 
       <input type="submit" value="Next" class="small button">
 </div>
+ -->
+  <%= render partial: "form" %> 
 
 </div>
 

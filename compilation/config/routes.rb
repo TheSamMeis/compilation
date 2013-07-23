@@ -1,6 +1,6 @@
 Compilation::Application.routes.draw do
-  get "accounts/edit"
-  get "accounts/update"
+  # get "accounts/edit"
+  # get "accounts/update"
   get "users/new"
   get "users/create"
   get "site/index"
@@ -12,9 +12,11 @@ Compilation::Application.routes.draw do
 
 ##SAM'S ROUTES 
 
-  get "/userdetails" => "accounts#edit"
-  get "/update" => "account#update"
+  resources :accounts
+  resources :user
+  # get "userdetails/:id" => "accounts#edit"
 
+ # get "update" => "accounts/update"
   
   
 
