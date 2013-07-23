@@ -1,8 +1,20 @@
 class AccountsController < ApplicationController
-  def edit
+ 
+def edit  
+  	# @user = User.find params[:id]
 
-  end
+end
 
-  def update
+ def update
+
+  	@user = User.find params[:id]
+  	@user.first_name = params[:first_name]
+  	@user.last_name = params[:last_name]
+  	@user.birthday = params[:birthday]
+  	# @user.lastfm_key = params[:token] 
+  	@user.save
+
+
+
   end
 end

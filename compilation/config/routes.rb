@@ -11,9 +11,10 @@ Compilation::Application.routes.draw do
   
 
 ##SAM'S ROUTES 
+  resources :users
 
-  get "/userdetails" => "accounts#edit"
-  get "/update" => "account#update"
+  get "userdetails/:id" => "accounts#edit"
+  post "update" => "accounts#update"
 
   
   
