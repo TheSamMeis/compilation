@@ -1,2 +1,56 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<style type="text/css">
+	body {
+		background: url(http://f.cl.ly/items/3O2q0L3E443K0j2N0K0g/music_staf-inverted.jpg) top left fixed;
+		background-size: 100% auto;
+	}
+	#loginTitle {
+		text-decoration: black;
+		color: black;
+	}
+	
+</style>
+<div class='row panel callout'>
+  <div class='large-4  columns'>
+    <br>
+    <h3>Sign Up!</h3>
+    <p>
+      If it is your first time on the site, enter an email and password into the fields to the right and click the Log In button.
+    </p>
+  </div>
+  <div class='large-5 columns panel'>
+    <h1 id='loginTitle'>Log in</h1>
+    <%= form_tag do %>
+      <%= email_field(:user, :address) %>
+      <%= password_field_tag(:password) %>
+      <%= submit_tag("Log In") %>
+    <% end %>
+
+    <form action='/login' method='post'>
+      <div class='large-11'>
+        <input type='text' id='email' placeholder='Email address' name='email'>
+      </div>
+      <div class="large-12">
+            <input type="password" id="password" name="password" placeholder="Password" class="large-6 columns">&nbsp;
+            <button id="toggle-password-field" class="small button alert">Show Password</button>
+          </div>
+      <div class="small-11 switch small">
+          <input id="x" name="switch-x" type="radio" checked>
+          <label for="x" onclick="">Remember Me: Off</label>
+
+          <input id="x1" name="switch-x" type="radio">
+          <label for="x1" onclick="">Remember Me: On</label>
+      </div>
+      <div class='large-11'>
+        <input class='button expand' type='submit' value='Log In'>
+      </div>
+    </form>
+  </div>
+  <div class='large-3 columns'>
+    <br>
+    <h3>Forgot Password?</h3>
+    <p>
+      If you forgot your password, simply enter your email and leave the password field blank. Then click the Log In button.
+    </p>
+  
+  </div>
+</div>
