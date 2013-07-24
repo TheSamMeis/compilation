@@ -20,8 +20,8 @@ development:
   database: compilation_development
   pool: 5
   host: localhost
-  username: skmeis
-  password: SAM892306
+  username: Nick
+  password: lol
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -50,8 +50,8 @@ test:
   database: compilation_test
   pool: 5
   host: localhost
-  username: skmeis  
-  password: SAM892306
+  username: Nick  
+  password: lol
 
 production:
   adapter: postgresql
@@ -59,5 +59,5 @@ production:
   database: compilation_production
   pool: 5
   host: localhost     
-  username: skmeis
-  password: SAM892306g
+  username: Nick
+  password: lol
